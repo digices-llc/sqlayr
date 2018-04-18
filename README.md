@@ -2,6 +2,10 @@
 
 _MySQL Database Wrapper for PHP using PDO_
 
+- **Author:** Roderic Linguri <linguri@digices.com>
+- **Version:** 0.4.2
+- **Copyright:** 2012-2018 Digices LLC
+
 ### Installing with Composer ###
 
 _Include the following in the root level of your composer.json:_
@@ -22,3 +26,4 @@ _Include the following in the root level of your composer.json:_
 ```
 
 _Then run `composer install` to include the library in your project._
+
