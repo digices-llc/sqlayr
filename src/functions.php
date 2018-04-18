@@ -2,7 +2,7 @@
 
 /**
  * @package   SQLayr
- * @version   0.4.2
+ * @version   0.4.3
  * @author    Roderic Linguri
  * @copyright 2017 Digices LLC
  * @license   MIT
@@ -35,3 +35,29 @@ function asserted_string($str) {
     return "''";
   }
 } // ./asserted_string
+
+/** @function Integer or NULL
+  * @descr    If no integer, return NULL, otherwise return integer
+  * @param    string
+  * @return   string
+  **/
+function integer_or_null($int) {
+  if (strlen($int) > 0) {
+    return $int;
+  } else {
+    return 'NULL';
+  }
+}
+
+/** @function Asserted Integer
+  * @descr    If no integer, return zero, otherwise return integer
+  * @param    bool | integer | string | null
+  * @return   integer
+  **/
+function asserted_integer($int) {
+  if (strlen($int) > 0) {
+    return $int;
+  } else {
+    return 0;
+  }
+}
