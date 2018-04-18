@@ -2,7 +2,7 @@
 
 /**
  * @package   SQLayr
- * @version   0.4.2
+ * @version   0.4.3
  * @author    Roderic Linguri
  * @copyright 2017 Digices LLC
  * @license   MIT
@@ -41,7 +41,11 @@ abstract class Table
     $values = array();
     foreach ($assoc as $k=>$v) {
       array_push($keys, $k);
-      array_push($values, \digices\sqlayr\asserted_string($v));
+      if ($k == 'id') {
+        array_push($values, \digices\sqlayr\integer_or_null($v));
+      } else {
+        array_push($values, \digices\sqlayr\asserted_string($v));
+      }
     }
     $sql = "INSERT INTO `".$this->name."` (`".implode("`,`", $keys)."`) VALUES (".implode(",", $values).");";
     return $this->database->insert($sql);
