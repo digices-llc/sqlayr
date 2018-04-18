@@ -135,7 +135,7 @@ class MyTable extends \digices\sqlayr\Table
   {
     $this->database = MyDatabase::shared();
     $this->name = 'test';
-    $this->columns = array('first','last');
+    $this->columns = array('id','first','last');
     parent::__construct();
   } // ./construct
 
@@ -162,7 +162,7 @@ Integer (ID of inserted row)
 ###### EXAMPLE: ######
 ```PHP
 $tbl = MyTable::shared();
-$id = $tbl->insertRow(array('id' => '','first' => 'Test','last' => 'Testerson'));
+$id = $tbl->insertRow(array('id' => null,'first' => 'Test','last' => 'Testerson'));
 ```
 
 ### Fetch Rows By Column ###
