@@ -93,7 +93,7 @@ Integer (Insert ID)
 ###### EXAMPLE: ######
 ```PHP
 $db = MyDatabase::shared();
-$insertId = $db->execute('INSERT INTO `test` (<#columns#>) VALUES (<#values#>);');
+$insertId = $db->insert('INSERT INTO `test` (<#columns#>) VALUES (<#values#>);');
 ```
 
 ### Fetch ###
