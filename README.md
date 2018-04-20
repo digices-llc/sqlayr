@@ -19,7 +19,7 @@ _Include the following in the root level of your composer.json:_
         }
     ],
     "require": {
-        "digices/sqlayr": ">=0.4.3"
+        "digices/sqlayr": ">=0.4.4"
     }
 }
 
