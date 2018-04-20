@@ -3,7 +3,7 @@
 _MySQL Database Wrapper for PHP using PDO_
 
 - **Author:** Roderic Linguri <linguri@digices.com>
-- **Version:** 0.4.3
+- **Version:** 0.4.4
 - **Copyright:** 2012-2018 Digices LLC
 
 ### Installing with Composer ###
