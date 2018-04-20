@@ -2,13 +2,15 @@
 
 /**
  * @package   SQLayr
- * @version   0.4.3
+ * @version   0.4.4
  * @author    Roderic Linguri
  * @copyright 2017 Digices LLC
  * @license   MIT
  */
 
 namespace digices\sqlayr;
+
+require_once(__DIR__.DIRECTORY_SEPARATOR.'functions.php');
 
 abstract class Table
 {
