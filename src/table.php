@@ -2,7 +2,7 @@
 
 /**
  * @package   SQLayr
- * @version   0.4.4
+ * @version   0.4.5
  * @author    Roderic Linguri
  * @copyright 2017 Digices LLC
  * @license   MIT
@@ -149,4 +149,11 @@ abstract class Table
     return $this->deleteRowsByColumn('id',$id);
   } // ./deleteRowById
 
+  /** @method Drop **/
+  public function drop()
+  {
+    $sql = "DROP TABLE `".$this->name."`;";
+    return $this->database->execute($sql);
+  } // ./drop
+ 
 } // ./Table
