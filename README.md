@@ -3,7 +3,7 @@
 _MySQL Database Wrapper for PHP using PDO_
 
 - **Author:** Roderic Linguri <linguri@digices.com>
-- **Version:** 0.4.4
+- **Version:** 0.4.5
 - **Copyright:** 2012-2018 Digices LLC
 
 ### Installing with Composer ###
@@ -19,7 +19,7 @@ _Include the following in the root level of your composer.json:_
         }
     ],
     "require": {
-        "digices/sqlayr": ">=0.4.4"
+        "digices/sqlayr": ">=0.4.5"
     }
 }
 
